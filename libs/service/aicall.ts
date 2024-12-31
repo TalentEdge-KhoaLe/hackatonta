@@ -14,7 +14,7 @@ async function callQwenModel(data: any): Promise<string> {
             (task: any) =>
               `{Title: ${task.title}, Description: ${task.description}, Priority: ${task.priority}} `
           ) +
-          'Return all the tasks with struction how to do it ,in priority order that you think I should do first. and in JSON format like this ["title": "task title", "instruction": "instruction"]. No Yapping'
+          'Return all the tasks with instruction step by step how to do it ,in priority order that you think I should do first. and in JSON format like this ["title": "task title", "instruction": "instruction"]. No Yapping'
         }`,
       },
     ];
